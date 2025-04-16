@@ -1,0 +1,68 @@
+.common {
+    text-align: center;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    
+}
+
+.header {
+    height: 100px;
+    background-color: #5a3e36;
+    color: #fdf6e3;
+    line-height: 100px;
+}
+
+.Mainbody {
+    background-color: #f9f5f0;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.footer {
+    background-color: #5a3e36;
+    color: #fdf6e3;
+    position: fixed;
+    bottom: 0px;
+    left: 5px;
+    right: 5px;
+    height: 25px;
+    padding-top: 15px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+nav {
+    background-color: #e0c9a6;
+    padding: 10px;
+    overflow: hidden;
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #3e2f23;
+    padding: 20px;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+
+nav a:hover {
+    background-color: #d3b88c;
+}
+.centeredList{
+    text-align: center;
+    padding-left: 0;
+    list-style-position: inside;
+}
+.tableau-iframe {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 75vh;
+    margin: auto;
+    border: none;
+  }

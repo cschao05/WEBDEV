@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Country Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .country-name {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Where should you visit next?</h1>
+        <button onclick="generateRandomCountry()">Pick a country</button>
+        <div class="country-name" id="country-name"></div>
+        <a href="blog.html">Return to Home</a>
+    </div>
+
+    <script>
+        const countries = [
+           "Russia", "Canada", "United States", "China", "Brazil", "Australia", "India", "Myanmar", 
+            "Kazakhstan", "France", "DR Congo", "Germany", "Mexico", "Indonesia", "Vietnam", "Libya", 
+            "Chad", "Niger", "Ukraine", "Mali", "South Africa", "Colombia", "Ethiopia", "Bolivia", 
+            "Mauritania", "Egypt", "Taiwan", "Thailand", "Argentina", "Italy", "United Kingdom", 
+            "Turkey", "Japan", "South Korea", "Saudi Arabia", "Spain", "Pakistan", "Algeria", 
+            "Malaysia", "Iraq", "Sudan", "Uzbekistan", "Poland", "Peru", "Afghanistan", "Morocco", 
+            "Angola", "Ukraine", "Kenya", "Tanzania", "Kuwait", "Czech Republic", "Chile", "Romania", 
+            "Argentina", "Zimbabwe", "Nepal", "Honduras", "Singapore", "Bulgaria", "Syria", "Cuba", 
+            "Jamaica", "Costa Rica", "Panama", "New Zealand", "Greece", "Portugal", "Croatia", 
+            "Belarus", "Slovakia", "Qatar", "Oman", "Hong Kong", "Luxembourg", "Switzerland", 
+            "Hong Kong", "Israel"
+        ];
+
+        function generateRandomCountry() {
+            const randomIndex = Math.floor(Math.random() * countries.length);
+            const randomCountry = countries[randomIndex];
+            document.getElementById("country-name").textContent = randomCountry;
+        }
+    </script>
+
+</body>
+</html>
